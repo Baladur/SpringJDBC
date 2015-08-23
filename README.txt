@@ -1,0 +1,2 @@
+Описание: Данная программа - реализация шаблона проектирования MVC. Использованые библиотеки: Spring Framework, Swixml, SQLite-JDBC. Сборка с помощью Apache Maven.
+Запуск: Запустите SpringJDBC.jar в папке target.

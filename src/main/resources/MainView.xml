@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame size="500,200" title="Guitar shop" defaultCloseOperation="JFrame.EXIT_ON_CLOSE">
+	<menubar>
+		<menu text="Продукт">
+			<menuitem action="toadd" text="Новый" />
+			<menuitem action="toedit" text="Редактировать"/>
+			<menuitem action="clear" text="Удалить всё"/>
+		</menu>
+	</menubar>
+	<panel layout="BorderLayout">
+		<scrollpane>
+			<list id="list" initclass="com.roman.app.SpringJDBC.GuitarModel" constraints="BorderLayout.CENTER" />
+		</scrollpane>
+	</panel>
+</frame>

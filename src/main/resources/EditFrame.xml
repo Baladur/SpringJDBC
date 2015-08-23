@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame size="270,160" title="Редактирование">
+	<panel layout="BorderLayout">
+		<hbox constraints="BorderLayout.NORTH" >
+			<vbox>
+				<label text="Название"/>
+				<label text="Страна"/>
+				<label text="Год"/>
+				<label text="Кол-во"/>
+			</vbox>
+			<vbox>
+				<textfield id="nameEd" size="10"/>
+				<textfield id="countryEd" size="10"/>
+				<textfield id="yearEd" size="5"/>
+				<textfield id="countEd" size="5"/>
+			</vbox>
+		</hbox>
+		<panel layout="FLowLayout">
+			<button id="saveBtn" text="Сохранить"/>
+			<button id="deleteBtn" text="Удалить"/>
+		</panel>
+	</panel>
+	
+	
+</frame>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    <context:annotation-config/>
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    	<property name="driverClassName" value="org.sqlite.JDBC"/>
+    	<property name="url" value="jdbc:sqlite:data2.s3db"/>
+    </bean>
+    <bean id="guitarsJDBCTemplate" class="com.roman.app.SpringJDBC.GuitarsJDBC" init-method="init">
+    	<property name="dataSource" ref="dataSource"/>
+    	<property name="publisher" ref="src"></property>
+    </bean>
+    <bean id="app" class="com.roman.app.SpringJDBC.App" init-method="init">
+    	<property name="database" ref="guitarsJDBCTemplate"/>
+    	<property name="view" ref="view"/>
+    </bean>
+    <bean id="view" class="com.roman.app.SpringJDBC.View">
+    	<property name="publisher" ref="src"/>
+    </bean>
+    <bean id="src" class="com.roman.app.SpringJDBC.GuitarEventPublisher"></bean>
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<frame size="270,160" title="Добавление продукта">
+	<panel layout="BorderLayout">
+		<hbox constraints="BorderLayout.NORTH" >
+			<vbox>
+				<label text="Название"/>
+				<label text="Страна"/>
+				<label text="Год"/>
+				<label text="Кол-во"/>
+			</vbox>
+			<vbox>
+				<textfield id="nameTf" size="10"/>
+				<textfield id="countryTf" size="10"/>
+				<textfield id="yearTf" size="5"/>
+				<textfield id="countTf" size="5"/>
+			</vbox>
+		</hbox>
+		<panel layout="FLowLayout">
+			<button id="addBtn" text="Добавить" constraints="FlowLayout.CENTER"/>
+		</panel>
+	</panel>
+	
+	
+</frame>

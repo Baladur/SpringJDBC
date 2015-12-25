@@ -45,7 +45,6 @@ public class Guitar {
 		return count;
 	}
 	public void buy() {
-		if (count>0)
-			count--;
+		if (count>0) count--;
 	}
 }

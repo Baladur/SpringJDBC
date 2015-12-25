@@ -9,8 +9,8 @@
 				<label text="Кол-во"/>
 			</vbox>
 			<vbox>
-				<textfield id="nameTf" size="10"/>
-				<textfield id="countryTf" size="10"/>
+				<textfield id="nameTf" size="15"/>
+				<textfield id="countryTf" size="15"/>
 				<textfield id="yearTf" size="5"/>
 				<textfield id="countTf" size="5"/>
 			</vbox>
